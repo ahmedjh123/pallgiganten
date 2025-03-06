@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pallgiganten - Din pålitliga partner för lastpallslösningar</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#1a1a1a',
+secondary: '#404040'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before { content: "\f3c2"; }
+.gallery-thumb.active { border-color: #2563eb; }
+</style>
+</head>
+<body class="bg-white min-h-screen">
+<header class="fixed top-0 left-0 right-0 bg-white shadow-sm z-50">
+<div class="container mx-auto px-4">
+<div class="flex items-center justify-between h-20">
+<a href="#" onclick="animateLogo(event)" class="text-3xl font-bold tracking-tight uppercase text-primary transition-all duration-300 hover:scale-105">PALLGIGANTEN</a>
+<nav class="hidden md:flex space-x-8">
+<a href="#produkter" class="text-gray-700 hover:text-primary font-medium">Produkter</a>
+<a href="#delivery" class="text-gray-700 hover:text-primary font-medium">Tjänster</a>
+<a href="#om-oss" class="text-gray-700 hover:text-primary font-medium">Om oss</a>
+<a href="#footer" class="text-gray-700 hover:text-primary font-medium">Kontakt</a>
+</nav>
+<button onclick="document.getElementById('quoteModal').classList.remove('hidden');document.getElementById('quoteModal').classList.add('flex');" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 whitespace-nowrap">Begär offert</button>
+</div>
+</div>
+</header>
+<main class="pt-20">
+<section class="bg-gradient-to-r from-gray-50 to-white">
+<div class="container mx-auto px-4 py-24">
+<div class="flex flex-col lg:flex-row items-center">
+<div class="w-full lg:w-1/2 lg:pr-12">
+<h1 class="text-5xl font-bold mb-6">Din pålitliga partner för lastpallslösningar</h1>
+<p class="text-xl text-gray-600 mb-8">Vi erbjuder högkvalitativa EUR-pallar och skräddarsydda logistiklösningar för företag i hela södra Sverige.</p>
+<div class="flex flex-col sm:flex-row gap-4">
+<button onclick="document.getElementById('produkter').scrollIntoView({behavior:'smooth'})" class="bg-primary text-white px-8 py-4 !rounded-button hover:bg-primary/90 text-lg font-semibold whitespace-nowrap">Se våra produkter</button>
+<button onclick="document.getElementById('footer').scrollIntoView({behavior:'smooth'})" class="border-2 border-primary text-primary px-8 py-4 !rounded-button hover:bg-primary/5 text-lg font-semibold whitespace-nowrap">Kontakta oss</button>
+</div>
+</div>
+<div class="w-full lg:w-1/2 mt-12 lg:mt-0">
+<img src="https://public.readdy.ai/ai/img_res/c24cfd2c89c5c06cdef3f177ca111acb.jpg" alt="Lagerlokal med pallar" class="w-full rounded-lg shadow-xl">
+</div>
+</div>
+</div>
+</section>
+<section id="produkter" class="py-16">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12">Våra mest populära produkter</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white rounded-lg shadow-sm overflow-hidden">
+<div class="relative">
+<img src="https://public.readdy.ai/ai/img_res/d6c165a6eab5602d7fb3fa80a9661d0c.jpg" alt="EUR-pall" class="w-full h-48 object-cover">
+<span class="absolute top-4 right-4 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">I lager</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-xl font-bold">EUR-pall</h3>
+<span class="text-lg font-bold">495 kr</span>
+</div>
+<ul class="text-sm text-gray-600 mb-4 space-y-1">
+<li class="flex items-center"><i class="ri-checkbox-circle-line text-primary w-4 h-4 mr-2"></i>1200 x 800 x 144 mm</li>
+<li class="flex items-center"><i class="ri-checkbox-circle-line text-primary w-4 h-4 mr-2"></i>Maxlast: 1500 kg</li>
+</ul>
+<button onclick="document.getElementById('halvpallSection').previousElementSibling.scrollIntoView({behavior: 'smooth'})" class="w-full bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90">Läs mer</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-sm overflow-hidden">
+<div class="relative">
+<img src="https://public.readdy.ai/ai/img_res/b0677b0f074bbe9ff7c1d7051cbbae6f.jpg" alt="Halvpall" class="w-full h-48 object-cover">
+<span class="absolute top-4 right-4 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">I lager</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-xl font-bold">Halvpall</h3>
+<span class="text-lg font-bold">295 kr</span>
+</div>
+<ul class="text-sm text-gray-600 mb-4 space-y-1">
+<li class="flex items-center"><i class="ri-checkbox-circle-line text-primary w-4 h-4 mr-2"></i>800 x 600 x 144 mm</li>
+<li class="flex items-center"><i class="ri-checkbox-circle-line text-primary w-4 h-4 mr-2"></i>Maxlast: 500 kg</li>
+</ul>
+<button onclick="document.getElementById('halvpallSection').scrollIntoView({behavior: 'smooth'})" class="w-full bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90">Läs mer</button>
+</div>
+</div>
+<div class="bg-white rounded-lg shadow-sm overflow-hidden">
+<div class="relative">
+<img src="https://public.readdy.ai/ai/img_res/db8b4c259d1c0a5d6e4138b2d979af40.jpg" alt="Engångspall" class="w-full h-48 object-cover">
+<span class="absolute top-4 right-4 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">I lager</span>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-center mb-2">
+<h3 class="text-xl font-bold">Engångspall</h3>
+<span class="text-lg font-bold">195 kr</span>
+</div>
+<ul class="text-sm text-gray-600 mb-4 space-y-1">
+<li class="flex items-center"><i class="ri-checkbox-circle-line text-primary w-4 h-4 mr-2"></i>1200 x 800 x 144 mm</li>
+<li class="flex items-center"><i class="ri-checkbox-circle-line text-primary w-4 h-4 mr-2"></i>Maxlast: 600 kg</li>
+</ul>
+<button onclick="document.getElementById('engangspallSection').scrollIntoView({behavior: 'smooth'})" class="w-full bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90">Läs mer</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="bg-gray-50 py-16">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold text-center mb-12">Varför välja Pallgiganten?</h2>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="text-center">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-shield-check-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Certifierad kvalitet</h3>
+<p class="text-gray-600">Alla våra produkter uppfyller EU-standarder</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-truck-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Snabba leveranser</h3>
+<p class="text-gray-600">Leverans inom 24-48 timmar i Skåne</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-customer-service-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Personlig service</h3>
+<p class="text-gray-600">Dedikerad kundtjänst för dina behov</p>
+</div>
+<div class="text-center">
+<div class="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+<i class="ri-recycle-line text-primary ri-2x"></i>
+</div>
+<h3 class="text-xl font-bold mb-2">Hållbart val</h3>
+<p class="text-gray-600">Miljöcertifierat trä och återvinning</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-16">
+<div class="container mx-auto px-4">
+<div class="flex flex-col lg:flex-row gap-12">
+<div class="w-full lg:w-1/2">
+<div class="relative aspect-square mb-4">
+<img id="mainImage" src="https://public.readdy.ai/ai/img_res/46b4f79c50f17cd9c0699780724f1616.jpg" alt="EUR-pall huvudbild" class="w-full h-full object-cover rounded-lg">
+</div>
+<div class="grid grid-cols-4 gap-4">
+<img src="https://public.readdy.ai/ai/img_res/cd28a48ed3ea1113684024103779fb32.jpg" alt="EUR-pall detalj" class="gallery-thumb cursor-pointer w-full aspect-square object-cover rounded-md border-2 border-transparent hover:border-primary">
+<img src="https://public.readdy.ai/ai/img_res/00ea7892e3b75fb58f876f459e37c874.jpg" alt="EUR-pall sidovy" class="gallery-thumb cursor-pointer w-full aspect-square object-cover rounded-md border-2 border-transparent hover:border-primary">
+<img src="https://public.readdy.ai/ai/img_res/a4e5cefff0859bd1e7b3ce5598b7b93f.jpg" alt="EUR-pall undervy" class="gallery-thumb cursor-pointer w-full aspect-square object-cover rounded-md border-2 border-transparent hover:border-primary">
+<img src="https://public.readdy.ai/ai/img_res/625375998236612c1f16fa3e05d15b5d.jpg" alt="EUR-pall staplad" class="gallery-thumb cursor-pointer w-full aspect-square object-cover rounded-md border-2 border-transparent hover:border-primary">
+</div>
+</div>
+<div class="w-full lg:w-2/3">
+<div class="flex justify-between items-center mb-4">
+<h2 class="text-2xl font-bold">EUR-pall / A-pall</h2>
+<div class="flex items-center space-x-3">
+<span class="text-xl font-bold">495 kr</span>
+<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">I lager</span>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-6">EUR-pallen är en standardiserad lastpall som uppfyller de strikta kraven enligt UIC-standard 435-2. Denna högkvalitativa pall är perfekt för tung industri och långvarig användning med sin robusta konstruktion och pålitliga prestanda.</p>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="bg-gray-50 p-3 rounded">
+<span class="text-sm font-medium block mb-1">Mått</span>
+<span class="text-gray-600 text-sm">1200 x 800 x 144 mm</span>
+</div>
+<div class="bg-gray-50 p-3 rounded">
+<span class="text-sm font-medium block mb-1">Maxlast</span>
+<span class="text-gray-600 text-sm">1500 kg</span>
+</div>
+<div class="bg-gray-50 p-3 rounded">
+<span class="text-sm font-medium block mb-1">Material</span>
+<span class="text-gray-600 text-sm">Furu/Gran</span>
+</div>
+<div class="bg-gray-50 p-3 rounded">
+<span class="text-sm font-medium block mb-1">Egenskaper</span>
+<span class="text-gray-600 text-sm">ISPM 15-certifierad</span>
+</div>
+</div>
+<div class="flex gap-4">
+<button onclick="document.getElementById('quoteModal').classList.remove('hidden');document.getElementById('quoteModal').classList.add('flex');" class="flex-1 bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 whitespace-nowrap">
+Begär offert
+</button>
+<button onclick="showContactModal(event)" class="flex-1 border-2 border-primary text-primary px-6 py-2 !rounded-button hover:bg-primary/5 whitespace-nowrap flex items-center justify-center">
+<i class="ri-customer-service-line mr-2"></i>
+Kontakta säljare
+</button>
+</div>
+</div>
+</div>
+<section id="halvpallSection" class="py-8">
+<div class="container mx-auto px-4">
+<div class="bg-white rounded-lg shadow-sm p-6">
+<div class="flex flex-col md:flex-row gap-8">
+<div class="w-full md:w-1/3">
+<div class="relative aspect-square mb-4">
+<img id="halvpallMainImage" src="https://public.readdy.ai/ai/img_res/44e51c2f4ad3b855790c8690217e2955.jpg" alt="Halvpall huvudbild" class="w-full h-full object-cover rounded-lg">
+</div>
+<div class="grid grid-cols-4 gap-4">
+<img src="https://public.readdy.ai/ai/img_res/fc66fb89990a67e24b73c8a45bddbb34.jpg" alt="Halvpall detalj" class="halvpall-thumb cursor-pointer w-full aspect-square object-cover rounded-md border-2 border-transparent hover:border-primary">
+<img src="https://public.readdy.ai/ai/img_res/99a0dae663e2175bdd1ad78a7a112b36.jpg" alt="Halvpall sidovy" class="halvpall-thumb cursor-pointer w-full aspect-square object-cover rounded-md border-2 border-transparent hover:border-primary">
+<img src="https://public.readdy.ai/ai/img_res/9079df3622a21b877e9b790d513eaae8.jpg" alt="Halvpall undervy" class="halvpall-thumb cursor-pointer w-full aspect-square object-cover rounded-md border-2 border-transparent hover:border-primary">
+<img src="https://public.readdy.ai/ai/img_res/9808b0fde5f00095a7ebc5d40304e6a4.jpg" alt="Halvpall staplad" class="halvpall-thumb cursor-pointer w-full aspect-square object-cover rounded-md border-2 border-transparent hover:border-primary">
+</div>
+</div>
+<div class="w-full md:w-2/3">
+<div class="flex justify-between items-center mb-4">
+<h2 class="text-2xl font-bold">Halvpall</h2>
+<div class="flex items-center space-x-3">
+<span class="text-xl font-bold">295 kr</span>
+<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">I lager</span>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-6">Halvpallen är det perfekta valet för butiksmiljöer och mindre laster. Med sin kompakta storlek är den idealisk för displayändamål och enklare transporter inom detaljhandeln.</p>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="bg-gray-50 p-3 rounded">
+<span class="text-sm font-medium block mb-1">Mått</span>
+<span class="text-gray-600 text-sm">800 x 600 x 144 mm</span>
+</div>
+<div class="bg-gray-50 p-3 rounded">
+<span class="text-sm font-medium block mb-1">Maxlast</span>
+<span class="text-gray-600 text-sm">500 kg</span>
+</div>
+<div class="bg-gray-50 p-3 rounded">
+<span class="text-sm font-medium block mb-1">Material</span>
+<span class="text-gray-600 text-sm">Furu/Gran</span>
+</div>
+<div class="bg-gray-50 p-3 rounded">
+<span class="text-sm font-medium block mb-1">Egenskaper</span>
+<span class="text-gray-600 text-sm">Lätt att hantera</span>
+</div>
+</div>
+<div class="flex gap-4">
+<button onclick="document.getElementById('quoteModal').classList.remove('hidden');document.getElementById('quoteModal').classList.add('flex');" class="flex-1 bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 whitespace-nowrap">
+Begär offert
+</button>
+<button onclick="showContactModal(event)" class="flex-1 border-2 border-primary text-primary px-6 py-2 !rounded-button hover:bg-primary/5 whitespace-nowrap flex items-center justify-center">
+<i class="ri-customer-service-line mr-2"></i>
+Kontakta säljare
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="engangspallSection" class="py-8">
+<div class="container mx-auto px-4">
+<div class="bg-white rounded-lg shadow-sm p-6">
+<div class="flex flex-col md:flex-row gap-8">
+<div class="w-full md:w-1/3">
+<div class="relative aspect-square mb-4">
+<img id="engangspallMainImage" src="https://public.readdy.ai/ai/img_res/63cf3b9c5dd73937ceb20b9f609e1339.jpg" alt="Engångspall huvudbild" class="w-full h-full object-cover rounded-lg">
+</div>
+<div class="grid grid-cols-4 gap-4">
+<img src="https://public.readdy.ai/ai/img_res/3c0d109dd76ebfef3722d2b141ebccff.jpg" alt="Engångspall detalj" class="engangspall-thumb cursor-pointer w-full aspect-square object-cover rounded-md border-2 border-transparent hover:border-primary">
+<img src="https://public.readdy.ai/ai/img_res/c24a1d3f1b8ce591d6934a3a2080ce82.jpg" alt="Engångspall sidovy" class="engangspall-thumb cursor-pointer w-full aspect-square object-cover rounded-md border-2 border-transparent hover:border-primary">
+<img src="https://public.readdy.ai/ai/img_res/71dabfd8cfe1f342cf2d3eb501ef282e.jpg" alt="Engångspall undervy" class="engangspall-thumb cursor-pointer w-full aspect-square object-cover rounded-md border-2 border-transparent hover:border-primary">
+<img src="https://public.readdy.ai/ai/img_res/9ee537ac9dc48760f791d110dab152cf.jpg" alt="Engångspall staplad" class="engangspall-thumb cursor-pointer w-full aspect-square object-cover rounded-md border-2 border-transparent hover:border-primary">
+</div>
+</div>
+<div class="w-full md:w-2/3">
+<div class="flex justify-between items-center mb-4">
+<h2 class="text-2xl font-bold">Engångspall</h2>
+<div class="flex items-center space-x-3">
+<span class="text-xl font-bold">195 kr</span>
+<span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">I lager</span>
+</div>
+</div>
+<p class="text-gray-600 text-sm mb-6">Engångspallen är ett ekonomiskt alternativ för engångsfrakter och exportleveranser. Den är tillverkad för att klara en transport och är ett miljövänligt alternativ då den kan återvinnas efter användning.</p><div class="grid grid-cols-2 gap-4 mb-6">
+<div class="bg-gray-50 p-3 rounded">
+<span class="text-sm font-medium block mb-1">Mått</span>
+<span class="text-gray-600 text-sm">1200 x 800 x 144 mm</span>
+</div>
+<div class="bg-gray-50 p-3 rounded">
+<span class="text-sm font-medium block mb-1">Maxlast</span>
+<span class="text-gray-600 text-sm">600 kg</span>
+</div>
+<div class="bg-gray-50 p-3 rounded">
+<span class="text-sm font-medium block mb-1">Material</span>
+<span class="text-gray-600 text-sm">Furu/Gran</span>
+</div>
+<div class="bg-gray-50 p-3 rounded">
+<span class="text-sm font-medium block mb-1">Egenskaper</span>
+<span class="text-gray-600 text-sm">Kostnadseffektiv</span>
+</div>
+</div>
+<div class="flex gap-4">
+<button onclick="document.getElementById('quoteModal').classList.remove('hidden');document.getElementById('quoteModal').classList.add('flex');" class="flex-1 bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 whitespace-nowrap">
+Begär offert
+</button>
+<button onclick="showContactModal(event)" class="flex-1 border-2 border-primary text-primary px-6 py-2 !rounded-button hover:bg-primary/5 whitespace-nowrap flex items-center justify-center">
+<i class="ri-customer-service-line mr-2"></i>
+Kontakta säljare
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="om-oss" class="py-16">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold mb-12">Om oss</h2>
+<div class="flex flex-col lg:flex-row gap-12 items-center">
+<div class="w-full lg:w-1/2">
+<img src="https://public.readdy.ai/ai/img_res/d436d528f78b5a6f310b2dd11a79d9c1.jpg" alt="Pallgiganten lager" class="rounded-lg shadow-lg w-full">
+</div>
+<div class="w-full lg:w-1/2">
+<h3 class="text-2xl font-bold mb-6">Ett familjeföretag med passion för kvalitet</h3>
+<div class="prose max-w-none space-y-4">
+<p class="text-gray-600">Pallgiganten är ett familjeägt företag med ett decennium av erfarenhet inom lastpallsindustrin. Vi började som en liten verksamhet, utrustade med en skåpbil och verktyg, och har sedan dess vuxit till att bli en pålitlig partner för lastpallslösningar i södra Sverige.</p>
+<p class="text-gray-600">Idag har vi över 2500 m² i lokaler och tomt i både Malmö och Helsingborg, fyllda med ett brett utbud av lastpallar för alla behov.</p>
+</div>
+<div class="mt-8">
+<h4 class="text-xl font-bold mb-4">Våra tjänster</h4>
+<div class="grid grid-cols-2 gap-4">
+<div class="flex items-center space-x-2">
+<i class="ri-checkbox-circle-line text-primary"></i>
+<span>Köp & försäljning</span>
+</div>
+<div class="flex items-center space-x-2">
+<i class="ri-checkbox-circle-line text-primary"></i>
+<span>Sortering</span>
+</div>
+<div class="flex items-center space-x-2">
+<i class="ri-checkbox-circle-line text-primary"></i>
+<span>Lagring</span>
+</div>
+<div class="flex items-center space-x-2">
+<i class="ri-checkbox-circle-line text-primary"></i>
+<span>Återvinning</span>
+</div>
+<div class="flex items-center space-x-2">
+<i class="ri-checkbox-circle-line text-primary"></i>
+<span>Specialtillverkning</span>
+</div>
+<div class="flex items-center space-x-2">
+<i class="ri-checkbox-circle-line text-primary"></i>
+<span>Rådgivning</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-16">
+<h3 class="text-2xl font-bold mb-8">Miljö och Hållbarhet</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-gray-50 p-6 rounded-lg">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-recycle-line text-primary ri-xl"></i>
+</div>
+<h4 class="text-lg font-bold mb-3">Återvinning</h4>
+<p class="text-gray-600">Vi köper in, återvinner och återanvänder pallar för att minska avfall och miljöpåverkan.</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-lg">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-plant-line text-primary ri-xl"></i>
+</div>
+<h4 class="text-lg font-bold mb-3">Hållbart material</h4>
+<p class="text-gray-600">Allt vårt trä kommer från certifierade och hållbara källor.</p>
+</div>
+<div class="bg-gray-50 p-6 rounded-lg">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-earth-line text-primary ri-xl"></i>
+</div>
+<h4 class="text-lg font-bold mb-3">Miljöansvar</h4>
+<p class="text-gray-600">Vi arbetar aktivt för att minimera vår miljöpåverkan i alla led av verksamheten.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="usage" class="py-16 bg-gray-50">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold mb-12">Användningsområden</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-store-2-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Lager & Logistik</h3>
+<p class="text-gray-600">Perfekt för lagring och transport inom lager och distributionscentraler.</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-truck-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Transport</h3>
+<p class="text-gray-600">Godkänd för internationell transport och uppfyller alla EU-standarder.</p>
+</div>
+<div class="bg-white p-6 rounded-lg shadow-sm">
+<div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
+<i class="ri-factory-line text-primary ri-xl"></i>
+</div>
+<h3 class="text-xl font-bold mb-3">Industri</h3>
+<p class="text-gray-600">Lämplig för tung industri med höga krav på hållbarhet och säkerhet.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="delivery" class="py-16">
+<div class="container mx-auto px-4">
+<h2 class="text-3xl font-bold mb-12">Leveransinformation</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div>
+<h3 class="text-xl font-bold mb-6">Leveransalternativ</h3>
+<div class="space-y-4">
+<div class="flex items-start p-4 bg-gray-50 rounded-lg">
+<i class="ri-truck-line text-primary w-6 h-6 flex items-center justify-center mr-4 mt-1"></i>
+<div>
+<h4 class="font-semibold mb-2">Standardleverans</h4>
+<p class="text-gray-600">2-3 arbetsdagar inom Skåne</p>
+<p class="text-sm text-gray-500 mt-1">Fri frakt vid order över 10 pallar</p>
+</div>
+</div>
+<div class="flex items-start p-4 bg-gray-50 rounded-lg">
+<i class="ri-time-line text-primary w-6 h-6 flex items-center justify-center mr-4 mt-1"></i>
+<div>
+<h4 class="font-semibold mb-2">Expressleverans</h4>
+<p class="text-gray-600">Nästa arbetsdag</p>
+<p class="text-sm text-gray-500 mt-1">Tillgänglig inom Malmö/Helsingborg</p>
+</div>
+</div>
+<div class="flex items-start p-4 bg-gray-50 rounded-lg">
+<i class="ri-store-line text-primary w-6 h-6 flex items-center justify-center mr-4 mt-1"></i>
+<div>
+<h4 class="font-semibold mb-2">Hämta i butik</h4>
+<p class="text-gray-600">Samma dag</p>
+<p class="text-sm text-gray-500 mt-1">Tillgänglig i våra butiker i Malmö och Helsingborg</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="text-xl font-bold mb-6">Betalningsalternativ</h3>
+<div class="space-y-4">
+<div class="flex items-center p-4 bg-gray-50 rounded-lg">
+<i class="ri-bank-card-line text-primary w-6 h-6 flex items-center justify-center mr-4"></i>
+<span>Företagsfaktura (30 dagar)</span>
+</div>
+<div class="flex items-center p-4 bg-gray-50 rounded-lg">
+<i class="ri-alipay-fill text-primary w-6 h-6 flex items-center justify-center mr-4"></i>
+<span>Swish företag</span>
+</div>
+<div class="flex items-center p-4 bg-gray-50 rounded-lg">
+<i class="ri-bank-line text-primary w-6 h-6 flex items-center justify-center mr-4"></i>
+<span>Förskottsbetalning</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer id="footer" class="bg-gray-900 text-white py-12">
+<div class="container mx-auto px-4">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div>
+<a href="/" class="text-2xl font-bold tracking-tight uppercase text-white mb-4 block">PALLGIGANTEN</a>
+<p class="text-gray-400">Din pålitliga partner för lastpallslösningar i södra Sverige sedan 2015.</p>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Snabblänkar</h4>
+<ul class="space-y-2">
+<li><a href="#produkter" class="text-gray-400 hover:text-white">Produkter</a></li>
+<li><a href="#tjanster" class="text-gray-400 hover:text-white">Tjänster</a></li>
+<li><a href="#om-oss" class="text-gray-400 hover:text-white">Om oss</a></li>
+<li><a href="#kontakt" class="text-gray-400 hover:text-white">Kontakt</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Kontakt</h4>
+<ul class="space-y-2">
+<li class="text-gray-400">Malmö: Sofiedalsvägen 10</li>
+<li class="text-gray-400">Helsingborg: Rännarbanan 4</li>
+<li><a href="mailto:info@pallgiganten.se" class="text-gray-400 hover:text-white">info@pallgiganten.se</a></li>
+<li><a href="tel:0721959697" class="text-gray-400 hover:text-white">0721-95 96 97</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-lg font-bold mb-4">Följ oss</h4>
+<div class="flex space-x-4">
+<button onclick="window.open('https://facebook.com/pallgiganten', '_blank')" class="text-gray-400 hover:text-white">
+<i class="ri-facebook-fill w-6 h-6 flex items-center justify-center"></i>
+</button>
+<button onclick="window.open('https://linkedin.com/company/pallgiganten', '_blank')" class="text-gray-400 hover:text-white">
+<i class="ri-linkedin-fill w-6 h-6 flex items-center justify-center"></i>
+</button>
+<button onclick="window.open('https://instagram.com/pallgiganten', '_blank')" class="text-gray-400 hover:text-white">
+<i class="ri-instagram-fill w-6 h-6 flex items-center justify-center"></i>
+</button>
+</div>
+</div>
+</div>
+<div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+<p>&copy; 2025 Pallgiganten. Alla rättigheter förbehållna.</p>
+</div>
+</div>
+</footer>
+<div id="quoteModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+<div class="bg-white rounded-lg p-8 max-w-md w-full mx-4">
+<h3 class="text-2xl font-bold mb-6">Begär offert</h3>
+<form id="quoteForm" class="space-y-4">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Antal pallar</label>
+<input type="number" min="1" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" required>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Företagsnamn</label>
+<input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" required>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Kontaktperson</label>
+<input type="text" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" required>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">E-post</label>
+<input type="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" required>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Telefon</label>
+<input type="tel" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" required>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-2">Meddelande (valfritt)</label>
+<textarea class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary" rows="3"></textarea>
+</div>
+<div class="flex justify-end space-x-4">
+<button type="button" class="px-6 py-2 border border-gray-300 !rounded-button hover:bg-gray-50 whitespace-nowrap" onclick="document.getElementById('quoteModal').classList.add('hidden');document.getElementById('quoteModal').classList.remove('flex');">Avbryt</button>
+<button type="submit" class="px-6 py-2 bg-primary text-white !rounded-button hover:bg-primary/90">Skicka förfrågan</button>
+</div>
+</form>
+</div>
+</div>
+<script>
+function animateLogo(event) {
+  event.preventDefault();
+  const logo = event.target;
+  const originalPosition = logo.getBoundingClientRect();
+  const clone = logo.cloneNode(true);
+  
+  clone.style.position = 'fixed';
+  clone.style.left = originalPosition.left + 'px';
+  clone.style.top = originalPosition.top + 'px';
+  clone.style.zIndex = '1000';
+  clone.style.pointerEvents = 'none';
+  document.body.appendChild(clone);
+  requestAnimationFrame(() => {
+    clone.style.transition = 'all 0.5s cubic-bezier(0.4, 0, 0.2, 1)';
+    clone.style.transform = 'scale(0.8)';
+    clone.style.opacity = '0';
+    clone.style.left = '20px';
+    clone.style.top = '20px';
+  });
+  setTimeout(() => {
+    clone.remove();
+    window.scrollTo({top: 0, behavior: 'smooth'});
+  }, 500);
+}
+function showContactModal(event) {
+event.preventDefault();
+const modal = document.createElement('div');
+modal.className = 'fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50';
+modal.innerHTML = `
+<div class="bg-white rounded-lg p-6 max-w-sm w-full mx-4">
+<h3 class="text-xl font-bold mb-4">Kontakta oss</h3>
+<div class="space-y-4">
+<div class="flex items-center space-x-4">
+<i class="ri-phone-line text-primary w-6 h-6 flex items-center justify-center"></i>
+<div>
+<p class="font-medium">Malmö</p>
+<a href="tel:0721959697" class="text-primary hover:underline">072-195 96 97</a>
+</div>
+</div>
+<div class="flex items-center space-x-4">
+<i class="ri-phone-line text-primary w-6 h-6 flex items-center justify-center"></i>
+<div>
+<p class="font-medium">Helsingborg</p>
+<a href="tel:0721959698" class="text-primary hover:underline">072-195 96 98</a>
+</div>
+</div>
+</div>
+<button onclick="this.closest('.fixed').remove()" class="mt-6 w-full px-4 py-2 bg-gray-100 text-gray-800 rounded-lg hover:bg-gray-200">Stäng</button>
+</div>
+`;
+document.body.appendChild(modal);
+}
+document.addEventListener('DOMContentLoaded', function() {
+const galleryThumbs = document.querySelectorAll('.gallery-thumb');
+const mainImage = document.getElementById('mainImage');
+const halvpallThumbs = document.querySelectorAll('.halvpall-thumb');
+const halvpallMainImage = document.getElementById('halvpallMainImage');
+const engangspallThumbs = document.querySelectorAll('.engangspall-thumb');
+const engangspallMainImage = document.getElementById('engangspallMainImage');
+galleryThumbs.forEach(thumb => {
+thumb.addEventListener('click', function() {
+mainImage.src = this.src;
+document.querySelectorAll('.gallery-thumb').forEach(t => t.classList.remove('active'));
+this.classList.add('active');
+});
+});
+halvpallThumbs.forEach(thumb => {
+thumb.addEventListener('click', function() {
+halvpallMainImage.src = this.src;
+document.querySelectorAll('.halvpall-thumb').forEach(t => t.classList.remove('active'));
+this.classList.add('active');
+});
+});
+engangspallThumbs.forEach(thumb => {
+thumb.addEventListener('click', function() {
+engangspallMainImage.src = this.src;
+document.querySelectorAll('.engangspall-thumb').forEach(t => t.classList.remove('active'));
+this.classList.add('active');
+});
+});
+const requestQuoteBtn = document.getElementById('requestQuote');
+const quoteModal = document.getElementById('quoteModal');
+const quoteForm = document.getElementById('quoteForm');
+requestQuoteBtn.addEventListener('click', function() {
+quoteModal.classList.remove('hidden');
+quoteModal.classList.add('flex');
+});
+function closeQuoteModal() {
+document.getElementById('quoteModal').classList.add('hidden');
+document.getElementById('quoteModal').classList.remove('flex');
+}
+quoteForm.addEventListener('submit', function(e) {
+e.preventDefault();
+const formData = new FormData(quoteForm);
+const data = Object.fromEntries(formData);
+console.log('Quote form submitted:', data);
+const notification = document.createElement('div');
+notification.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg';
+notification.textContent = 'Tack för din förfrågan! Vi återkommer inom kort.';
+document.body.appendChild(notification);
+setTimeout(() => {
+notification.remove();
+closeQuoteModal();
+}, 3000);
+quoteForm.reset();
+});
+const contactSalesBtn = document.getElementById('contactSales');
+contactSalesBtn.addEventListener('click', function() {
+window.location.href = 'tel:0721959697';
+});
+});
+</script>
+</body>
+</html>
